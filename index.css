@@ -23,7 +23,7 @@ header{
 header .logo{
     margin: 0;
     padding: 0px auto;
-    width: 190px;
+    width: 150px;
 }
 
 header .container{
@@ -89,15 +89,14 @@ header a:hover{
 }
 
 #nuestros-productos{
+    display: flex;
+    align-items: center;
     background-color: #4db6ac;
     color: rgba(208, 236, 231);
     text-align: center;
+    height: 100vh;
 }
 
-#carouselExampleSlidesOnly{
-    margin: 0 auto;
-    width: 21rem;
-}
 
 #nuestros-productos .carousel-item img{
     height: 500px;
@@ -105,21 +104,25 @@ header a:hover{
     
 }
 
+#lista-de-precios img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
 #nuestros-productos h2{
     font-size: 2.4em;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #004d40;
 }
 
-#nuestros-productos h5{
-    margin-bottom: -40px;
-    font-size: 3em;
+#nuestros-productos h3{
+    font-size: 1.8em;
     text-align: center;
     color: #FFFFFF;
     text-shadow: 1px 1px 8px #000;
 }
-
 
 
 
@@ -130,19 +133,22 @@ header a:hover{
 }
 
 #lista-de-precios .container{
-    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
 }
 
 #lista-de-precios h2{
     color: #004d40;
     font-size: 2.4em;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
 
 #lista-de-precios .card-title{
     color: #333333;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #lista-de-precios p{
@@ -156,15 +162,15 @@ header a:hover{
 #contacto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
     background-color: #4db6ac;
     color: #004d40;
+    height: 90vh;
 }
 
 #contacto h2{
-    margin-top: 50px;
     color: #004d40;
     font-size: 2.4em;
 }
@@ -177,6 +183,8 @@ header a:hover{
 .contactimg{
     width: 80px;
 }
+
+
 
 footer{
     background-color: #4db6ac;
@@ -191,11 +199,88 @@ footer p{
     margin: 0;
 }
 
-@media (min-width:720px){
-}
+@media (min-width:1024px){
 
-header .container{
+   header .container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    } 
+
+    #lista-de-precios .container.pepe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+;
+
     }
+
+    #lista-de-precios .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items:flex-start
+    }  
+
+    header .logo{
+        margin: 0;
+        padding: 0px auto;
+        width: 100px;
+    }
+
+    header a{
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 500;
+        color: #004d40;
+        font-size: 1.5em;
+    }
+
+    #bienvenida h1{
+        font-size: 5em;
+        padding: 20px 200px;
+        margin-top: -60px;
+        color: rgba(208, 236, 231);
+        text-transform: uppercase;
+    }
+    #bienvenida h3{
+        font-size: 3em;
+        font-weight: lighter;
+        color: rgba(208, 236, 231);
+        padding: 40px 200px;
+        margin: 0;
+    }
+
+    #nuestros-productos h2{font-size: 4.4em;}
+
+    #lista-de-precios h2{font-size: 4.4em;}
+
+    #lista-de-precios img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    
+
+    
+
+    #contacto .container{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+
+    #contacto h2{
+        font-size: 4.4em;
+
+    }
+
+    #nuestros-productos h3{
+        font-size: 6em;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 1px 1px 8px #000;
+    }
+}
+
