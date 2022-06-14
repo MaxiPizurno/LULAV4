@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+h1{font-size: 2em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1.2em;}
+h6{font-size: 1.1em;}
+p{font-size: 1.2em;}
+
+
+header{
+    background-color: #4db6ac;
+}
+header .logo{
+    margin: 0;
+    padding: 0px auto;
+    width: 190px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+header .nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0;
+}
+    header a{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #004d40;
+    font-size: 1em;
+}
+
+header a:hover{
+    color: rgba(208, 236, 231);
+}
+
+#bienvenida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/sojarelle.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#bienvenida h1{
+    font-size: 2.6em;
+    padding: 40px 30px;
+    margin-top: -60px;
+    color: rgba(208, 236, 231);
+    text-transform: uppercase;
+}
+#bienvenida h3{
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: rgba(208, 236, 231);
+    padding: 0px 30px;
+    margin: 0;
+}
+
+.espacio{
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+#nuestros-productos{
+    background-color: #4db6ac;
+    color: rgba(208, 236, 231);
+    text-align: center;
+}
+
+#carouselExampleSlidesOnly{
+    margin: 0 auto;
+    width: 21rem;
+}
+
+#nuestros-productos .carousel-item img{
+    height: 500px;
+    object-fit: cover;
+    
+}
+
+#nuestros-productos h2{
+    font-size: 2.4em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #004d40;
+}
+
+#nuestros-productos h5{
+    margin-bottom: -40px;
+    font-size: 3em;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 8px #000;
+}
+
+
+
+
+#lista-de-precios{
+    background-color: #4db6ac;
+    color: rgba(208, 236, 231);
+    text-align: center;
+}
+
+#lista-de-precios .container{
+    padding: 50px 20px;
+}
+
+#lista-de-precios h2{
+    color: #004d40;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+}
+
+#lista-de-precios .card-title{
+    color: #333333;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#lista-de-precios p{
+    font-size: 1em;
+    margin:0;
+    color: #000;
+}
+
+
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4db6ac;
+    color: #004d40;
+}
+
+#contacto h2{
+    margin-top: 50px;
+    color: #004d40;
+    font-size: 2.4em;
+}
+
+#contacto h3{
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.contactimg{
+    width: 80px;
+}
+
+footer{
+    background-color: #4db6ac;
+    color: rgba(208, 236, 231);
+    text-align: center;
+}
+
+footer p{
+    color: #004d40;
+    font-size: 1em;
+    padding: 10px;
+    margin: 0;
+}
+
+@media (min-width:720px){
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
